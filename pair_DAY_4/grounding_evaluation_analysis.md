@@ -30,6 +30,174 @@ It computes these metrics globally, then slices by:
 
 condition
 category
+
+---
+
+## Observed Output
+
+# Evaluation Slice Metrics
+Loaded traces: 60
+
+## Global
+{
+  "n": 60,
+  "pass_rate": 0.6,
+  "failed": 24,
+  "unique_outputs": 17,
+  "most_common_output_count": 17,
+  "most_common_output_share": 0.283,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+## By condition
+
+auto_optimization
+{
+  "n": 20,
+  "pass_rate": 0.4,
+  "failed": 12,
+  "unique_outputs": 3,
+  "most_common_output_count": 16,
+  "most_common_output_share": 0.8,
+  "most_common_output": "Thanks for the context. I can share a measured observation and avoid assuming more than the public signal supports."
+}
+
+baseline
+{
+  "n": 20,
+  "pass_rate": 0.4,
+  "failed": 12,
+  "unique_outputs": 3,
+  "most_common_output_count": 17,
+  "most_common_output_share": 0.85,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+method
+{
+  "n": 20,
+  "pass_rate": 1.0,
+  "failed": 0,
+  "unique_outputs": 11,
+  "most_common_output_count": 3,
+  "most_common_output_share": 0.15,
+  "most_common_output": "Thanks for the context.\nUse question-first wording and separate observed facts from hypotheses.\nUseful next step: a brief exploratory call only if the signal and timing are relevant on your side."
+}
+
+## By category
+
+bench_overcommitment
+{
+  "n": 6,
+  "pass_rate": 0.333,
+  "failed": 4,
+  "unique_outputs": 4,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+cost_pathology
+{
+  "n": 6,
+  "pass_rate": 1.0,
+  "failed": 0,
+  "unique_outputs": 3,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+dual_control
+{
+  "n": 6,
+  "pass_rate": 1.0,
+  "failed": 0,
+  "unique_outputs": 3,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+gap_overclaiming
+{
+  "n": 6,
+  "pass_rate": 0.333,
+  "failed": 4,
+  "unique_outputs": 4,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Thanks for the context. I can share a measured observation and avoid assuming more than the public signal supports."
+}
+
+icp_misclassification
+{
+  "n": 6,
+  "pass_rate": 0.333,
+  "failed": 4,
+  "unique_outputs": 5,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Congrats on the raise. Since you are aggressively hiring, Tenacious can help scale your engineering team fast."
+}
+
+multi_thread_leakage
+{
+  "n": 6,
+  "pass_rate": 0.333,
+  "failed": 4,
+  "unique_outputs": 3,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+scheduling
+{
+  "n": 6,
+  "pass_rate": 1.0,
+  "failed": 0,
+  "unique_outputs": 5,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+signal_overclaiming
+{
+  "n": 6,
+  "pass_rate": 1.0,
+  "failed": 0,
+  "unique_outputs": 3,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+signal_reliability
+{
+  "n": 6,
+  "pass_rate": 0.333,
+  "failed": 4,
+  "unique_outputs": 5,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+tone_drift
+{
+  "n": 6,
+  "pass_rate": 0.333,
+  "failed": 4,
+  "unique_outputs": 3,
+  "most_common_output_count": 2,
+  "most_common_output_share": 0.333,
+  "most_common_output": "Tenacious can provide offshore engineers quickly. Would you like a 30-minute call?"
+}
+
+
+---
 Why This Matters
 
 Before Day 4, I treated global metrics as if they were sufficient summaries of model behavior.
@@ -73,6 +241,9 @@ pass rate by category
 repeated-output share by condition
 repeated-output share by category
 worst-slice performance
+
+--- 
+
 Before
 
 My evaluation treated global summaries as sufficient:
