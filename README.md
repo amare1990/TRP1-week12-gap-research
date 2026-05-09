@@ -25,10 +25,18 @@ Each pair day included:
 
 ## Day 1 — LoRA Adaptation and Response Collapse
 
+<<<<<<< HEAD
 Folder: `pair_DAY_1/`
 
 Target repo: **tenacious-bench** from week11
 
+=======
+Target repo: **tenacious-bench** from week11
+
+
+Folder: `pair_DAY_1/`
+
+>>>>>>> ae2f2ee (Add README.md)
 Topics:
 - intrinsic low-rank adaptation
 - LoRA rank selection
@@ -46,6 +54,13 @@ Runnable artifact:
 ```bash
 cd tenacious-bench
 
+<<<<<<< HEAD
+=======
+mkdir -p pair_DAY_1/scripts
+touch pair_DAY_1/scripts/detect_response_collapse.py
+cp ~/TRP1-week12-GAP-RESEARCH/pair_DAY_1/scripts/detect_response_collapse.py ./
+
+>>>>>>> ae2f2ee (Add README.md)
 uv run python pair_DAY_1/scripts/detect_response_collapse.py
 ````
 
@@ -77,6 +92,13 @@ Runnable artifact:
 ```bash
 cd tenacious-bench
 
+<<<<<<< HEAD
+=======
+mkdir -p pair_DAY_2/scripts
+touch pair_DAY_2/scripts/verify_objection_context.py
+cp ~/TRP1-week12-GAP-RESEARCH/pair_DAY_2/scripts/verify_objection_context.py ./
+
+>>>>>>> ae2f2ee (Add README.md)
 uv run python pair_DAY_2/scripts/verify_objection_context.py
 ```
 
@@ -108,7 +130,11 @@ Runnable artifact:
 cd data-contract-enforcer
 mkdir -p pair_DAY_3/scripts
 touch pair_DAY_3/scripts/verify_embedding_drift.py
+<<<<<<< HEAD
 cp ~/TRP!-week12-GAP-RESEARCH/pair_DAY_3/scripts/verify_embedding_drift.py ./
+=======
+cp ~/TRP1-week12-GAP-RESEARCH/pair_DAY_3/scripts/verify_embedding_drift.py ./
+>>>>>>> ae2f2ee (Add README.md)
 
 uv run python pair_DAY_3/scripts/verify_embedding_drift.py
 ```
@@ -117,6 +143,11 @@ uv run python pair_DAY_3/scripts/verify_embedding_drift.py
 
 ## Day 4 — Evaluation and Statistical Validity
 
+<<<<<<< HEAD
+=======
+Target repo: **tenacious-bench** from week11
+
+>>>>>>> ae2f2ee (Add README.md)
 Folder: `pair_DAY_4/`
 
 Topics:
@@ -136,6 +167,15 @@ Key additions:
 Runnable artifact:
 
 ```bash
+<<<<<<< HEAD
+=======
+cd tenacious-bench
+
+mkdir -p pair_DAY_4/scripts
+touch pair_DAY_4/scripts/evaluate_slice_metrics.py
+cp ~/TRP1-week12-GAP-RESEARCH/pair_DAY_4/scripts/evaluate_slice_metrics.py ./
+
+>>>>>>> ae2f2ee (Add README.md)
 uv run python pair_DAY_4/scripts/evaluate_slice_metrics.py
 ```
 
