@@ -2,7 +2,7 @@
 
 ## Artifact Updated
 
-- `data-contract-enforcer/scripts/verify_embedding_drift.py`
+- `pair_DAY_3/scripts/verify_embedding_drift.py`
 - `pair_DAY_3/tool_grounding_analysis.md`
 - Week 7 Data Contract Enforcer embedding-threshold assumptions
 
